@@ -22,32 +22,61 @@
         },
       };
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Fresh Flowers</title>
   </head>
   <body>
-    <section class="heading">
-      <div class="w-full flex justify-between items-center max-w-[1140px] h-[71px]  p-0 m-0 mx-auto">
-        <!--LOGO-->
+    <section class="Head-sm inline sm:hidden mt-3">
+      <div class="flex justify-between max-sm:mt-[30px] ">
+        <div class="max-sm:w-[138px]">
+          <p class="font-bold mx-[40px]">9:41</p>
+        </div>
+        <div class="gap-2.5 flex mx-[30px]">
+          <i class="fa fa-signal" aria-hidden="true"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-full"></i>
+        </div>
+      </div>
+    </section>
+    <section class="heading px-4 py-4">
+      <!-- <div class="w-full flex justify-between items-center max-w-[1140px] max-h-[71px] p-0 m-0 mx-auto">-->
+      <!--LOGO-->
+      <div
+        class="max-w-[1140px] mx-auto w-full flex justify-between items-center max-sm:w-[393px] max-sm:h-[54px]"
+      >
         <div>
-          <img class="w-[135px] h-[82px]" src="./assets/logo.png" alt="" />
+          <img
+            class="w-[135px] h-auto sm:w-[63px] sm:h-[38px]"
+            src="./assets/logo.png"
+            alt=""
+          />
         </div>
         <!--Navigation-->
-        <div class="flex justify-between items-center w-[415px] h-[60px] ">
-          <h1 class="text-[20px] ">Home</h1>
-          <h1 class="text-[#8987A1]">Shop</h1>
-          <h1 class="text-[#8987A1]">About us</h1>
-          <h1> <i class="fa-solid fa-cart-shopping"></i>  Cart ($56)</h1>
+        <div
+          class="items-center max-w-[415px] h-auto gap-3.5 sm:flex sm:justify-around"
+        >
+          <h1 class="text-[20px] sm:inline hidden">Home</h1>
+          <h1 class="text-[#8987A1] sm:inline hidden">Shop</h1>
+          <h1 class="text-[#8987A1] sm:inline hidden">About us</h1>
+          <h1 class="sm:w-[113px] sm:h-[24px]">
+            <i class="fa-solid fa-cart-shopping"></i> Cart ($56)
+          </h1>
         </div>
       </div>
     </section>
     <!--start banner-->
-    <section class="banner">
+    <section class="banner flex flex-col sm:flex-col-reverse">
       <div
-        class="fresh-flowers_container flex items-center justify-center max-w-[1140px] h-[461px] mx-auto p-0 m-0 gap-8"
+        class="fresh-flowers_container flex sm:flex-row flex-col-reverse items-center justify-center max-w-[1140px] h-auto mx-auto p-0 m-0 gap-8"
       >
         <div
-          class="fresh-flowers max-w-[570px] h-[299px] flex flex-col justify-end p-0 m-0"
+          class="fresh-flowers max-w-[570px] w-full h-auto flex flex-col justify-end p-0 m-0 max-sm:ml-[20px] max-sm:mr-[20px] max-sm:w-[361px] max-sm:h-auto"
         >
           <div class="fresh-flowers-document gap-0 p-0 m-0">
             <h1 class="text-4xl font-Serif font-bold">
@@ -65,7 +94,7 @@
         </div>
         <div class="fresh-flowers">
           <img
-            class="max-w-[570px] h-[355px]"
+            class="max-w-[570px] h-[355px] max-sm:w-[394px]"
             src="./assets/hero-flower.png"
             alt=""
           />
@@ -74,7 +103,7 @@
     </section>
     <!--Ending banner content-->
     <!--Plans section start-->
-    <section class="Plants py-16">
+    <section class="Plants py-2 mt-0 mb-0 max-sm:mt-[260px] max-sm:mb-[250px]">
       <div
         class="flex flex-col justify-center items-start max-w-[1140px] h-[1185px] mx-auto px-4 md:px-0 gap-[49px] p-0 m-0"
       >
@@ -90,7 +119,9 @@
             variety of fresh.
           </h1>
         </div>
-        <div class="plant-item grid grid-cols-4 gap-[30px] p-0 m-0">
+        <div
+          class="plant-item grid sm:grid-cols-4 gap-[30px] p-0 m-0 grid-cols-2"
+        >
           <div class="plant flex flex-col items-center mx-auto">
             <img src="./assets/sample-flower-image.png" alt="" />
             <div class="max-w-[132px] h-[52px] flex flex-col items-center">
@@ -199,44 +230,52 @@
     </section>
     <!--Plant section ENd-->
     <!--Flowers&Plants Lover start-->
-    <section>
+    <section class="max-sm:ml-[39px]">
       <div
-        class="w-[1140px] h-[597px] p-0 m-0 flex gap-[65px] mx-auto mb-[150px]"
+        class="max-w-[1140px] h-auto p-0 m-0 flex gap-[65px] mx-auto mb-[150px] max-sm:flex-col max-sm:h-auto max-sm:mt-1"
       >
         <div class="relative">
           <img
-            class="w-[286px] h-[286px] absolute -top-30 left-85"
+            class="max-sm:hidden inline max-w-[286px] w-full h-[286px] absolute -top-30 left-85"
             src="./assets/trusted-badge.png"
             alt=""
           />
           <img
-            class="w-[540px] h-[597px] object-cover rounded-md"
+            class="max-w-[540px] h-auto object-cover rounded-md max-sm:w-[358px] max-sm:h-auto"
             src="./assets/flower-store.png"
             alt=""
           />
         </div>
         <div>
-          <div class="w-[540px] h-[137px] font-serif text-[50px] text-left">
-            <p>Flower & Plants</p>
-            <p>Lover</p>
+          <div
+            class="max-w-[540px] h-auto font-serif font-bold text-[50px] text-left max-sm:text-[24px] max-sm:flex max-sm:justify-start max-sm:gap-1"
+          >
+            <span>Flower & Plants</span>
+            <span>Lover</span>
           </div>
           <div>
-            <p class="w-[540px] h-[108px] font-inter text-[22px] text-left">
-              Indulge your senses with the beauty and fragrance of our fresh
+            <p
+              class="max-w-[540px] h-auto font-inter text-[22px] text-left text-[#000000] opacity-[50%]"
+            >
+              . Indulge your senses with the beauty and fragrance of our fresh
               flower shop. From classic roses to exotic blooms, we offer a wide
               variety of fresh.
             </p>
           </div>
           <div>
-            <p class="w-[540px] h-[108px] font-inter text-[22px] text-left">
-              Indulge your senses with the beauty and fragrance of our fresh
+            <p
+              class="max-w-[540px] h-auto font-inter text-[22px] text-left text-[#000000] opacity-[50%]"
+            >
+              . Indulge your senses with the beauty and fragrance of our fresh
               flower shop. From classic roses to exotic blooms, we offer a wide
               variety of fresh.
             </p>
           </div>
           <div>
-            <p class="w-[540px] h-[108px] font-inter text-[22px] text-left">
-              Indulge your senses with the beauty and fragrance of our fresh
+            <p
+              class="max-w-[540px] h-auto font-inter text-[22px] text-left text-[#000000] opacity-[50%]"
+            >
+              . Indulge your senses with the beauty and fragrance of our fresh
               flower shop. From classic roses to exotic blooms, we offer a wide
               variety of fresh.
             </p>
@@ -248,7 +287,7 @@
     <!--Latest Deals section start-->
     <section class="Deals">
       <div
-        class="max-w-[1440px] h-[138px] flex flex-col justify-center items-center content-center mb-[120px]"
+        class="max-w-[1440px] h-auto flex flex-col justify-center items-center content-center mb-[120px] max-sm:gap-[16px]"
       >
         <h1 class="text-[50px] text-center font-serif">
           <span class="text-[#E95A08]">Latest</span> Deals
@@ -264,18 +303,18 @@
     </section>
     <!--Latest deals section end-->
     <!--Flowers start-->
-    <section class="picture">
+    <section class="picture max-sm:-mt-20">
       <div
-        class="max-w-[1140px] h-[423px] gap-7 text-center flex justify-center items-center mx-auto mb-[150px]"
+        class="max-w-[1140px] h-[423px] gap-7 text-center flex justify-center items-center mx-auto mb-[150px] max-sm:flex-col max-sm:h-auto max-sm:w-[361px]"
       >
-        <div class="max-h-[423px] w-[367px] flex flex-col gap-[25px]">
+        <div class="max-h-[423px] flex flex-col gap-[25px]">
           <div
             class="bg-[url('./assets/deal-bloom.png')] bg-cover bg-center p-4 w-[366px] h-[206px] flex flex-col justify-center rounded-lg"
           >
-            <p class="font-serif text-[20px] text-center">
+            <p class="font-serif text-[20px] text-center text-white">
               60%Off | Bloom Plant
             </p>
-            <p class="underline font-inter text-[16px]">Shop Now</p>
+            <p class="underline font-inter text-[16px] text-white">Shop Now</p>
           </div>
           <div
             class="bg-[url('./assets/deal-ana.png')] bg-cover bg-center rounded-lg w-[367px] h-[197px] flex flex-col justify-center"
@@ -287,7 +326,7 @@
           </div>
         </div>
         <div
-          class="bg-[url('./assets/deal-zabo.png')] bg-cover bg-center rounded-lg p-6 flex flex-col justify-center w-[753px] h-[423px] text-white shadow-lg"
+          class="bg-[url('./assets/deal-zabo.png')] bg-cover bg-center rounded-lg p-6 flex flex-col justify-center w-[753px] h-[423px] text-white shadow-lg max-sm:max-w-[361px] max-sm:max-h-[172px]"
         >
           <p class="font-serif text-[20px] text-center">25% Off | Zabo Plant</p>
           <p class="underline font-inter text-[16px]">Shop Now</p>
@@ -296,7 +335,7 @@
     </section>
     <!--Flowers end-->
     <!--Search section start-->
-    <section class="search">
+    <section class="search max-sm:-mt-[90px]">
       <div
         class="bg-[url('./assets/news-letter-bg.png')] bg-cover bg-center max-w-[1440PX] mx-auto h-[533px] w-full"
       >
@@ -325,9 +364,13 @@
     </section>
     <!--Search ENd-->
     <!--Footer section start-->
-    <section class="footer">
-      <div class="w-[1440px] h-[348px] gap-0 p-0 m-0 mx-auto">
-        <div class="w-[1120px] h-[248px] flex gap-[] gap-[60px] mt-[50px]">
+    <section class="footer mb-0">
+      <div
+        class="w-[1440px] h-[348px] gap-0 p-0 m-0 mx-auto max-sm:max-w-[393px] max-sm:max-h-[865px]"
+      >
+        <div
+          class="w-[1120px] h-auto flex sm:gap-[60px] mt-[50px] max-sm:flex-col max-sm:mt-[50px] max-sm:max-w-[0px] max-sm:gap-[30px]"
+        >
           <div
             class="w-[359px] h-[179px] gap-[32px] flex flex-col justify-center mx-auto"
           >
@@ -339,21 +382,27 @@
               flower shop.
             </p>
           </div>
-          <div class="w-[128px] gap-[32px] p-0 m-0">
+          <div
+            class="sm:w-[128px] flex flex-col sm:gap-[32px] p-0 m-0 max-sm:max-h-[248px] max-sm:max-w-[85px] max-sm:gap-[32px]"
+          >
             <p class="text-gray-500">Home</p>
-            <p class="text-gray-500">About Us</p>
+            <p class="text-gray-500 max-sm:w-[128px]">About Us</p>
             <p class="text-gray-500">Blog</p>
             <p class="text-gray-500">FAQ</p>
-            <p class="text-gray-500">Contact Us</p>
+            <p class="text-gray-500 max-sm:w-[128px]">Contact Us</p>
           </div>
-          <div class="w-[128px] gap-[32px] p-0 m-0">
+          <div
+            class="sm:w-[128px] sm:gap-[32px] flex flex-col p-0 m-0 max-sm:max-w-[128px] max-sm:max-h-auto max-sm:-mt-[20px] max-sm:gap-[32px]"
+          >
             <p class="text-gray-500">Feature</p>
             <p class="text-gray-500">Pricing</p>
-            <p class="text-gray-500">Privacy policy</p>
-            <p class="text-gray-500">Terms of Service</p>
-            <p class="text-gray-500">Help Center</p>
+            <p class="text-gray-500 max-sm:w-[128px]">Privacy policy</p>
+            <p class="text-gray-500 max-sm:w-[128px]">Terms of Service</p>
+            <p class="text-gray-500 max-sm:w-[128px]">Help Center</p>
           </div>
-          <div class="w-[216px] h-[36px] gap-[94px] p-0 m-0 flex">
+          <div
+            class="w-[216px] h-[36px] sm:gap-[94px] p-0 m-0 flex max-sm:max-w-[216px] max-sm:max-h-auto max-sm:gap-[30px]"
+          >
             <img src="./assets/icon-linkedin.png" alt="" />
             <img src="./assets/icon-twitter.png" alt="" />
             <img src="./assets/icon-facebook.png" alt="" />
@@ -362,6 +411,8 @@
         </div>
       </div>
     </section>
-    <!--Footer section end-->
+    <p class="max-sm:mt-4"></p>
+    <!--
+   Footer section end-->
   </body>
 </html>
