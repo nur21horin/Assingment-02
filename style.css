@@ -1,0 +1,9 @@
+@import "tailwindcss";
+.fresh-flowers{
+    max-height: 570px;
+    height: 355px;
+    font-family: "Noto Serif", serif; 
+}
+.fresh-flowers span,h2{
+    color: #E95A08;
+}
