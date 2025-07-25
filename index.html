@@ -9,6 +9,20 @@
       @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Noto Serif"', "serif"],
+              inter: ['"Inter"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
     <title>Fresh Flowers</title>
   </head>
   <body>
@@ -169,12 +183,22 @@
       </div>
     </section>
     <!--Plant section ENd-->
+    <section class="Deals">
+      <div class="max-w-[1440px] h-[138px] flex flex-col justify-center items-center content-center mb-[120px]">
+        <h1 class="  text-[50px] text-center font-serif">
+          <span class="text-[#E95A08] ">Latest</span> Deals
+        </h1>
+        <p class=" max-w-[888px] font-inter py-8 my-auto text-[22px] text-center text-[#000000] opacity-[50%]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+      </div>
+    </section>
     <!--Search section start-->
     <section class="search">
       <div
         class="bg-[url('./assets/news-letter-bg.png')] bg-cover bg-center max-w-[1440PX] mx-auto h-[533px] w-full"
       >
-        <div class="text-center max-w-xl w-full px-4 flex flex-col items-center justify-center h-screen content-center justify-self-center">
+        <div
+          class="text-center max-w-xl w-full px-4 flex flex-col items-center justify-center h-screen content-center justify-self-center gap-[20px]"
+        >
           <h1 class="text-white text-3xl font-serif">
             Join the colorful Bunch
           </h1>
@@ -195,5 +219,6 @@
         </div>
       </div>
     </section>
+    <!--Search ENd-->
   </body>
 </html>
